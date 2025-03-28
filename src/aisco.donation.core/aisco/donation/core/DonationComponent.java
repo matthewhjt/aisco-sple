@@ -6,19 +6,19 @@ public abstract class DonationComponent implements Donation
     protected String email;
     protected String phone;
     protected int amount;
-    protected String paymentMethod;
+    protected String duration;
 
     public DonationComponent()
     {
     }
 
-    public DonationComponent (String name, String email, String phone, int amount, String paymentMethod)
+    public DonationComponent (String name, String email, String phone, int amount, String duration)
     {
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.amount = amount;
-        this.paymentMethod = paymentMethod;
+        this.duration = duration;
     }
 
     public abstract void addDonation();

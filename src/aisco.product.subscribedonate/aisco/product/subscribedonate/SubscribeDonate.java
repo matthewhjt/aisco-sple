@@ -1,4 +1,4 @@
-package aisco.product.rumahzakat;
+package aisco.product.subscribedonate;
 
 import aisco.program.core.Program;
 import aisco.program.ProgramFactory;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class RumahZakat {
+public class SubscribeDonate {
     private static final int INDEX_SCHOOL = 0;
     private static final int INDEX_LIBRARY = 1;
     private static final int INDEX_ELECTRICITY = 2;
@@ -54,7 +54,7 @@ public class RumahZakat {
 
     public static void addDonation()
     {  
-        Donation donate = DonationFactory.createDonation("aisco.donation.pgateway.DonationImpl");
+        Donation donate = DonationFactory.createDonation("aisco.donation.core.DonationImpl");
         donate.addDonation();
         donate.getDonation();
     }
